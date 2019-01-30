@@ -1,0 +1,40 @@
+{
+  "name": "tea-rest-helper-params",
+  "version": "1.0.2",
+  "description": "Controller helper params for tea-rest or koa, Used to get instance from Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && istanbul cover ./node_modules/mocha/bin/_mocha ./test/*.js -- -R spec",
+    "lint": "eslint {./index.js,./test} && echo '\u001b[32m\u001b[1mEslint validate success.\u001b[22m\u001b[39m'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tea-node/tea-rest-helper-params.git"
+  },
+  "keywords": [
+    "restapi",
+    "controller",
+    "helper",
+    "assistant",
+    "koa",
+    "tea-rest"
+  ],
+  "author": "baiyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tea-node/tea-rest-helper-params/issues"
+  },
+  "homepage": "https://github.com/tea-node/tea-rest-helper-params#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^5.2.0",
+    "tea-rest": "^1.0.4"
+  },
+  "dependencies": {
+    "func-delegate": "^0.3.1",
+    "lodash": "^4.17.11"
+  }
+}
