@@ -1,4 +1,4 @@
-const delegate = require('func-delegate');
+const validator = require('func-args-validator');
 const _ = require('lodash');
 
 module.exports = (rest) => {
@@ -131,10 +131,10 @@ module.exports = (rest) => {
   }];
 
   rest.helper.params = {
-    omit: delegate(omit, omitSchemas),
-    map: delegate(map, mapSchemas),
-    required: delegate(required, requiredSchemas),
-    assign: delegate(assign, assignSchemas),
+    omit: validator(omit, omitSchemas),
+    map: validator(map, mapSchemas),
+    required: validator(required, requiredSchemas),
+    assign: validator(assign, assignSchemas),
   };
 
   return rest.helper.params;
